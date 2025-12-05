@@ -5,13 +5,13 @@
 class Gcloudctx < Formula
   desc "Fast way to switch between gcloud configurations, inspired by kubectx"
   homepage "https://github.com/Okabe-Junya/gcloudctx"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.0/gcloudctx_0.1.0_darwin_amd64.tar.gz"
-      sha256 "911335c4f958110ae0222a7ccb275abee6c5ac6ba788e617b1f69eafbe3fe80f"
+      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.1/gcloudctx_0.1.1_darwin_amd64.tar.gz"
+      sha256 "c36e12c2e3585b6d04b2cff615c17d23a879599729b5840c0ffd3a12916d705c"
 
       def install
         bin.install "gcloudctx"
@@ -19,8 +19,8 @@ class Gcloudctx < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.0/gcloudctx_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8122d4d51d48b5c3c1895d1aa81c55623b2ef3c7355d48c5228a023b3cbc3afb"
+      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.1/gcloudctx_0.1.1_darwin_arm64.tar.gz"
+      sha256 "890258d91032e7d93a47f9105acb4e9af8a6636d7edf795fb2b9dea980a216cc"
 
       def install
         bin.install "gcloudctx"
@@ -31,16 +31,16 @@ class Gcloudctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.0/gcloudctx_0.1.0_linux_amd64.tar.gz"
-      sha256 "c677345281b65296ccd69a3b8b2f123a348dab78521368d0511005700ae63cd4"
+      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.1/gcloudctx_0.1.1_linux_amd64.tar.gz"
+      sha256 "0d2796bd3f8b8d678898d714b75ea3a0a9a434e1e56e2803bacd33230aa8af06"
       def install
         bin.install "gcloudctx"
         generate_completions_from_executable(bin/"gcloudctx", "completion", base_name: "gcloudctx")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.0/gcloudctx_0.1.0_linux_arm64.tar.gz"
-      sha256 "258b799396926056dc48ae58126bb348565dc2828f8911d10082e876f9ec891b"
+      url "https://github.com/Okabe-Junya/gcloudctx/releases/download/v0.1.1/gcloudctx_0.1.1_linux_arm64.tar.gz"
+      sha256 "62c381882d2fc542f93cfc8a12ff5ac18735f4e1ca6075eb7d71b7d4e8a26472"
       def install
         bin.install "gcloudctx"
         generate_completions_from_executable(bin/"gcloudctx", "completion", base_name: "gcloudctx")
