@@ -5,21 +5,21 @@
 class Nigiri < Formula
   desc "nigiri - A Git branch management tool"
   homepage "https://github.com/oota-sushikuitee/nigiri"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.1.3/nigiri_0.1.3_darwin_amd64.tar.gz"
-      sha256 "d97a012e1fd586edf861660cef49df45fce763f3eaabbde0c99b76ac88fb8a05"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.0/nigiri_0.2.0_darwin_amd64.tar.gz"
+      sha256 "e6fdd004c9b3571b9c7d6622c1aee445acebb3767b37b02f3d03690249538405"
 
       def install
         bin.install "nigiri"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.1.3/nigiri_0.1.3_darwin_arm64.tar.gz"
-      sha256 "249b049933d712af43f1c7fcebbc3a0412cec639eedd489797d230f60981d46b"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.0/nigiri_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d946bba92e56e96cf3c08bf46a53eb42edbe1b3dd098c02239edf05d8aee9a9c"
 
       def install
         bin.install "nigiri"
@@ -29,15 +29,15 @@ class Nigiri < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.1.3/nigiri_0.1.3_linux_amd64.tar.gz"
-      sha256 "18164c7ae4b0268bbb241f3892b57bc65ab439fb36e681bd16a8f63c4dd2760f"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.0/nigiri_0.2.0_linux_amd64.tar.gz"
+      sha256 "7be76d11b0a7492351fc1a1a7fdc2212d135427e805ab4828b8e169d220ebca0"
       def install
         bin.install "nigiri"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.1.3/nigiri_0.1.3_linux_arm64.tar.gz"
-      sha256 "59acde3c831c7ef149c657dd8d4d69e1cb49c6c3c99b3273e9d17eeef1b76259"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.0/nigiri_0.2.0_linux_arm64.tar.gz"
+      sha256 "ccc71ac1b8c4634f62b2f373b86bf9b98c0de18dc4a8f8893ef2a87ad9880b89"
       def install
         bin.install "nigiri"
       end
