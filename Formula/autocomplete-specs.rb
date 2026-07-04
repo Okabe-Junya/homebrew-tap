@@ -11,7 +11,9 @@ class AutocompleteSpecs < Formula
   license "MIT"
 
   def install
-    pkgshare.install "build"
+    # The tarball's single top-level "build/" directory is stripped by
+    # Homebrew's staging, so the specs land directly in the buildpath.
+    (pkgshare/"build").install Dir["*"]
   end
 
   def post_install
