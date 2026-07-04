@@ -5,9 +5,9 @@
 class AutocompleteSpecs < Formula
   desc "Prebuilt completion specs for Kiro CLI autocomplete"
   homepage "https://github.com/Okabe-Junya/autocomplete"
-  url "https://github.com/Okabe-Junya/autocomplete/releases/download/v2026.07.04.2008/autocomplete-specs-2026.07.04.2008.tar.gz"
-  sha256 "848fc73e49c26d29a7dca7981389c872d2299b5007572392d3796d750524b082"
-  version "2026.07.04.2008"
+  url "https://github.com/Okabe-Junya/autocomplete/releases/download/v2.693.0/autocomplete-specs-2.693.0.tar.gz"
+  sha256 "e5a8ba79fdcee41a84a9ecd06f18a2763a41ff2533652063523588fd1a319027"
+  version "2.693.0"
   license "MIT"
 
   def install
