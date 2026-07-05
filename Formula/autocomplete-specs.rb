@@ -5,9 +5,9 @@
 class AutocompleteSpecs < Formula
   desc "Prebuilt completion specs for Kiro CLI autocomplete"
   homepage "https://github.com/Okabe-Junya/autocomplete"
-  url "https://github.com/Okabe-Junya/autocomplete/releases/download/v2.693.0/autocomplete-specs-2.693.0.tar.gz"
-  sha256 "e5a8ba79fdcee41a84a9ecd06f18a2763a41ff2533652063523588fd1a319027"
-  version "2.693.0"
+  url "https://github.com/Okabe-Junya/autocomplete/releases/download/v0.1.0/autocomplete-specs-0.1.0.tar.gz"
+  sha256 "1bf9d35c14bdfbeb9871825dec124700a3965ee7c04b9e7cde445efbceb34b49"
+  version "0.1.0"
   license "MIT"
 
   def install
@@ -17,14 +17,11 @@ class AutocompleteSpecs < Formula
   end
 
   def caveats
-    # post_install cannot create this symlink: Homebrew sandboxes it with a
-    # redirected HOME, so writes to "~" silently land in a throwaway dir.
     <<~EOS
-      To let Kiro CLI load these specs, create a one-time symlink
-      (move any existing real directory aside first):
+      To let Kiro CLI load these specs, create a one-time symlink:
         mkdir -p ~/.fig/autocomplete
         ln -sfn #{opt_pkgshare}/build ~/.fig/autocomplete/build
-      The link target is stable, so future \`brew upgrade\`s apply automatically.
+      Future upgrades apply automatically.
     EOS
   end
 
