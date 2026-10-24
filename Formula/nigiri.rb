@@ -5,21 +5,21 @@
 class Nigiri < Formula
   desc "Manage upstream VCS repositories and build artifacts across versions"
   homepage "https://github.com/oota-sushikuitee/nigiri"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.1/nigiri_0.2.1_darwin_amd64.tar.gz"
-      sha256 "a525b4cbdaf562075617701dfb55a567a90bd0832c6622f1aaf22b205a4cabc7"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.3.0/nigiri_0.3.0_darwin_amd64.tar.gz"
+      sha256 "dbe2af10b60224214d31a62dea0868ac08f4065898bad0a46e1e056eca7d15c6"
 
       define_method(:install) do
         bin.install "nigiri"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.1/nigiri_0.2.1_darwin_arm64.tar.gz"
-      sha256 "a9bafec69dc4403ac7b219989b61988975413533ea1f6b797cc96fed55a9e83d"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.3.0/nigiri_0.3.0_darwin_arm64.tar.gz"
+      sha256 "6545a22f678d420d0803190e72e02a0c2590e802a4d849de363fe9020ccc91cb"
 
       define_method(:install) do
         bin.install "nigiri"
@@ -29,15 +29,15 @@ class Nigiri < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.1/nigiri_0.2.1_linux_amd64.tar.gz"
-      sha256 "212bdf515b0d2e7576deb9de0fff7f2d1d963785181aa31607d60a51eb6d974c"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.3.0/nigiri_0.3.0_linux_amd64.tar.gz"
+      sha256 "fe533219b0e5dabb894b788b8eccf4a87007d652b9bc34f3d1a31b72b7cdf891"
       define_method(:install) do
         bin.install "nigiri"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.2.1/nigiri_0.2.1_linux_arm64.tar.gz"
-      sha256 "01dda269f6daa0334d2fc09bf63e0041f0ff761933343f54651e929a4bca43f7"
+      url "https://github.com/oota-sushikuitee/nigiri/releases/download/v0.3.0/nigiri_0.3.0_linux_arm64.tar.gz"
+      sha256 "0d4acbd11057c798190b407c944ca73d24622dc81d21cc4379d31175422a07a5"
       define_method(:install) do
         bin.install "nigiri"
       end
